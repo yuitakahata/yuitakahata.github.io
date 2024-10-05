@@ -1,0 +1,54 @@
+body {
+  background-color: #ffffe0;
+}
+
+.bg_pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffff;
+  opacity: 0.4;
+  z-index: -1;
+}
+.Polka_v2 {
+  background-image:  radial-gradient(#ffc107 2px, transparent 2px), radial-gradient(#ffc107 2px, #ffffff 2px);
+  background-size: 40px 40px;
+  background-position: 0 0,20px 20px;
+}
+
+.head_test {
+    margin:  0;                 /* デフォルトCSS打ち消し */
+    font-size:  24px;           /* 文字サイズ指定 */
+    position:  relative;        /* 位置調整 */
+    font-weight:  normal;       /* 文字の太さ調整 */
+    display:  inline-block;     /* インラインブロックにする */
+    padding-top: 40px;          /* 余白指定 */
+    padding-left: 40px;         /* 余白指定 */
+    padding-bottom: 20px;       /* 余白指定 */
+}
+p {
+    margin:  0;                 /* デフォルトCSS打ち消し */
+    line-height: 2;             /* 行間調整 */
+    padding-left: 40px;         /* 余白指定 */
+}
+.head_test:before {
+    content:  '';               /* 空白の要素を作る */
+    background-color: #ffeaac;  /* 背景色指定 */
+    display:  block;            /* ブロック要素にする */
+    position:  absolute;        /* 位置調整 */
+    left:  0;                   /* 位置調整 */
+    height: 90px;               /* 高さ指定 */
+    width: 90px;                /* 幅指定 */
+    border-radius:  50%;        /* 丸くする */
+    top: 0;                     /* 位置調整 */
+    z-index:  -1;               /* 重なり調整 */
+}
+
+h2 {
+  /*線の種類（二重線）太さ 色*/
+  border-bottom: double 5px #FFC778;
+}
+# <div class="bg_pattern Polka_v2"></div>
+# 見出しはhead_test
